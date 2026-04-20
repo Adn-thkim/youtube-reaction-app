@@ -1,6 +1,7 @@
 export default function AggregateSummary({ aggregateAnalysis, filters, meta }) {
   const classificationCounts = (meta?.classificationCounts || {});
   const publishedRangeLabel = filters.publishedRangeLabel || '전체';
+  const validVideoCount = meta?.validCount || 0;
 
   return (
     <section className="mb-5 rounded-2xl border border-blue-900/70 bg-blue-950/30 p-4">
@@ -34,7 +35,9 @@ export default function AggregateSummary({ aggregateAnalysis, filters, meta }) {
         </span>
       </div>
 
-      <h2 className="text-yt-text text-lg font-semibold mb-2">9개 영상 반응 종합 요약</h2>
+      <h2 className="text-yt-text text-lg font-semibold mb-2">
+        {validVideoCount}개 영상 반응 종합 요약
+      </h2>
       <p className="text-sm text-yt-text leading-6">
         {aggregateAnalysis?.overallSummary || '종합 요약이 아직 생성되지 않았습니다.'}
       </p>
