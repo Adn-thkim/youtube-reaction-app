@@ -2,7 +2,7 @@
 
 YouTube 검색어를 기준으로 유효한 영상을 필터링한 뒤 조회수 상위 9개 영상을 선정하고, 댓글 반응을 분석해 영상별 요약과 검색어 기준 종합 요약을 제공하는 React 기반 로컬 웹 앱입니다.
 
-현재 이 저장소의 기본 실행 경로는 `로컬 서버 + YouTube Data API v3 + Claude Code CLI`입니다. 예전에 정리된 `Vercel + Claude API` 배포 문서는 남아 있지만, 현재 코드와 `.env.example` 기준의 기본 동작은 로컬 실행 버전입니다.
+현재 이 저장소의 기본 실행 경로는 `로컬 서버 + YouTube Data API v3 + Claude Code CLI`입니다.
 
 ## 현재 기능
 
