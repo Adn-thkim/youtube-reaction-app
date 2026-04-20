@@ -91,10 +91,10 @@ YOUTUBE_API_KEY=발급받은_YouTube_API_키
 
 ### Claude CLI 경로 예시
 
-이 머신에서는 아래 경로가 사용될 수 있습니다.
+환경마다 설치 경로가 다를 수 있으므로 아래처럼 일반화된 절대경로를 사용할 수 있습니다.
 
 ```env
-CLAUDE_CLI_COMMAND=/Users/thkim/.local/bin/claude
+CLAUDE_CLI_COMMAND=/absolute/path/to/claude
 ```
 
 코드는 아래 순서로 CLI 경로를 탐색합니다.
